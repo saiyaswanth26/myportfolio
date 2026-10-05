@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Venkata Sai Yaswanth Bachu | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#050a07;--card:#09130c;--ink:#c8f7d4;--mute:#6fae83;--line:#1c3a27;--grid:#0b1a10;--blue:#39ff7a;--amber:#ffb000;--on-blue:#04110a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="amber"]{--bg:#070502;--card:#120d04;--ink:#ffe3a8;--mute:#b58a3c;--line:#3a2c10;--grid:#1a1407;--blue:#ffb000;--amber:#39ff7a;--on-blue:#130d00}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 .95rem/1.75 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:36px 36px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
+h1,h2,h3{font-family:"Share Tech Mono","JetBrains Mono",ui-monospace,monospace;font-weight:400;line-height:1.15;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+nav strong{color:var(--blue);font-weight:500}
+nav .links{display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--blue);text-shadow:0 0 8px var(--blue)}
+button{font:inherit;cursor:pointer}
+.theme{background:transparent;color:var(--blue);border:1px solid var(--blue);border-radius:2px;padding:.2rem .7rem}
+.theme:hover{background:var(--blue);color:var(--on-blue)}
+.hero{padding:4.5rem 0 5rem}
+.prompt{color:var(--mute);margin:0 0 1rem}
+.prompt::before{content:"$ ";color:var(--blue)}
+.hero h1{font-size:clamp(2.3rem,7vw,4.6rem);color:var(--blue);text-shadow:0 0 18px color-mix(in srgb,var(--blue) 55%,transparent);letter-spacing:-.01em}
+.cur{display:inline-block;width:.5em;height:.9em;background:var(--blue);margin-left:.15em;vertical-align:-.05em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{color:var(--mute);max-width:40rem;margin:1.4rem 0 1.8rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:2px;text-decoration:none;border:1px solid var(--blue);color:var(--blue)}
+.btn:hover{box-shadow:0 0 14px color-mix(in srgb,var(--blue) 60%,transparent)}
+.btn.main{background:var(--blue);color:var(--on-blue);font-weight:700}
+section{padding:2.5rem 0}
+section>h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.4rem;color:var(--ink)}
+section>h2::before{content:"> ";color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.2rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:1.3rem}
+.card h3{font-size:1.2rem;margin-bottom:.2rem;color:var(--ink)}
+.date{color:var(--mute);font-size:.85rem;margin:0 0 .6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0 0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);color:var(--blue);border-radius:2px;padding:.1rem .6rem;font-size:.85rem}
+.proj{border-left:3px solid var(--blue)}
+.proj ul{padding-left:1.1rem;margin:.6rem 0}
+.skills dt{font-family:"Share Tech Mono",monospace;color:var(--amber);margin-top:1rem}
+.skills dt:first-child{margin-top:0}
+.skills dd{margin:.4rem 0 0}
+.edu{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.9rem 0;border-bottom:1px dashed var(--line)}
+.edu:last-child{border:0}
+.certs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:.8rem}
+.certs li{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:2px;padding:.8rem 1rem}
+.certs span{display:block;color:var(--mute);font-size:.85rem}
+footer{padding:3rem 0 2rem;color:var(--mute)}
+footer .big{font:400 clamp(1.3rem,4vw,2rem) "Share Tech Mono",monospace;color:var(--ink);word-break:break-word}
+@media (max-width:760px){.hero{padding-top:2rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <strong>yaswanth@portfolio:~$</strong>
+  <div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  <button class="theme" id="theme" type="button" aria-label="Switch terminal color between green and amber">color</button></div>
+</nav>
+
+<header class="hero">
+  <div>
+    <p class="prompt">whoami</p>
+    <h1>Venkata Sai Yaswanth Bachu<span class="cur" aria-hidden="true"></span></h1>
+    <p class="lead">Computer Science student in Kurnool who works with data and builds responsive web apps. I'm looking for opportunities to apply my skills, learn from industry professionals, and contribute to projects that matter.</p>
+    <div class="cta"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="card proj">
+      <h3>Personal Portfolio Website</h3>
+      <p class="date">May 2026</p>
+      <ul>
+        <li>Built and deployed a modern portfolio with React, Vite, and Tailwind CSS, using responsive, reusable UI components.</li>
+        <li>Added interactive animations, dark and light mode, and layouts tuned for engagement and accessibility.</li>
+        <li>Showcases projects, skills, and contact options in a fast, mobile-friendly design.</li>
+      </ul>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul>
+      <p id="l1"></p>
+    </article>
+    <article class="card proj">
+      <h3>FuelTrip: Trip Fuel and Cost Calculator</h3>
+      <p class="date">Jul 2026</p>
+      <ul>
+        <li>An interactive web app that estimates fuel use, total cost, and each person's share from distance, vehicle efficiency, and fuel price.</li>
+        <li>Updates in real time, supports km, miles, MPG, and liters, and includes presets for different driving conditions.</li>
+        <li>Splits the cost between passengers.</li>
+      </ul>
+      <ul class="tags"><li>TypeScript</li><li>CSS</li><li>JavaScript</li></ul>
+      <p id="l2"></p>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills card">
+    <dt>Programming languages</dt><dd><ul class="tags"><li>Python</li><li>Java</li><li>C</li></ul></dd>
+    <dt>Databases</dt><dd><ul class="tags"><li>MySQL</li><li>MongoDB</li></ul></dd>
+    <dt>Web</dt><dd><ul class="tags"><li>HTML</li><li>CSS</li></ul></dd>
+    <dt>AI and ML</dt><dd><ul class="tags"><li>Fundamentals of AI</li></ul></dd>
+    <dt>Soft skills</dt><dd><ul class="tags"><li>Communication</li><li>Problem solving</li><li>Adaptability</li><li>Time management</li></ul></dd>
+  </dl>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <div class="edu"><div><h3>B.Tech in Computer Science</h3>G. Pullaiah College of Engineering and Technology</div><span>2023 to 2027</span></div>
+    <div class="edu"><div><h3>Intermediate (MPC)</h3>Board of Intermediate Education, Andhra Pradesh</div><span>2021 to 2023</span></div>
+  </div>
+  <p style="margin-top:1.2rem">Hackathons and collaborative projects have strengthened my problem solving, teamwork, and software development skills.</p>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <ul class="certs">
+    <li>AWS Certified Machine Learning Engineer - Associate<span>Amazon Web Services</span></li>
+    <li>Agentic AI Certified Foundations Associate<span>Oracle</span></li>
+    <li>Data Analytics Job Simulation<span>Deloitte</span></li>
+    <li>GenAI Powered Data Analytics Job Simulation<span>Tata</span></li>
+    <li>Python Essentials<span>Cisco Networking Academy</span></li>
+    <li>Quantum Fundamentals<span>Wiser</span></li>
+  </ul>
+</section>
+
+<footer id="contact">
+  <h2 style="font-size:1.1rem;margin-bottom:.6rem">Contact</h2>
+  <div class="big"><a href="mailto:bachuvenkatasaiyaswanth@gmail.com" style="color:inherit">bachuvenkatasaiyaswanth@gmail.com</a></div>
+  <p>Phone: <a href="tel:+919441401427">+91 94414 01427</a><br>Kurnool, Andhra Pradesh, India</p>
+  <p id="soc"></p>
+  <p style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem">&copy; 2026 Venkata Sai Yaswanth Bachu. All rights reserved.</p>
+</footer>
+</div>
+
+<script>
+// Add your links here and they appear on the page automatically.
+var LINKS={github:"https://github.com/saiyaswanth26",linkedin:"https://www.linkedin.com/in/venkata-sai-yaswanth-bachu-33b4392bb/",portfolioRepo:"",portfolioDemo:"",fueltripRepo:""};
+function a(h,t){return '<a href="'+h+'" target="_blank" rel="noopener">'+t+'</a>'}
+function put(id,parts){document.getElementById(id).innerHTML=parts.filter(Boolean).join(" &nbsp;|&nbsp; ")}
+put("l1",[LINKS.portfolioRepo&&a(LINKS.portfolioRepo,"GitHub"),LINKS.portfolioDemo&&a(LINKS.portfolioDemo,"Live demo")]);
+put("l2",[LINKS.fueltripRepo&&a(LINKS.fueltripRepo,"GitHub")]);
+put("soc",[LINKS.github&&a(LINKS.github,"GitHub"),LINKS.linkedin&&a(LINKS.linkedin,"LinkedIn")]);
+var root=document.documentElement;
+try{var s=localStorage.getItem("hk");if(s==="amber")root.setAttribute("data-theme","amber")}catch(e){}
+document.getElementById("theme").addEventListener("click",function(){
+  var amber=root.getAttribute("data-theme")==="amber";
+  if(amber)root.removeAttribute("data-theme");else root.setAttribute("data-theme","amber");
+  try{localStorage.setItem("hk",amber?"green":"amber")}catch(e){}
+});
+</script>
+</body>
+</html>
