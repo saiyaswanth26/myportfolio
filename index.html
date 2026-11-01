@@ -67,7 +67,7 @@ footer .big{font:400 clamp(1.3rem,4vw,2rem) "Share Tech Mono",monospace;color:va
 <div class="wrap">
 <nav aria-label="Main">
   <strong>yaswanth@portfolio:~$</strong>
-  <div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  <div class="links"><a href="#projects">Projects</a><a href="#internship">Internship</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
   <button class="theme" id="theme" type="button" aria-label="Switch terminal color between green and amber">color</button></div>
 </nav>
 
@@ -108,12 +108,26 @@ footer .big{font:400 clamp(1.3rem,4vw,2rem) "Share Tech Mono",monospace;color:va
   </div>
 </section>
 
+<section id="internship">
+  <h2>Internship</h2>
+  <article class="card proj">
+    <h3>UI/UX Design Intern</h3>
+    <p class="date">CodeAlpha | Oct 2026</p>
+    <ul>
+      <li>Applied industry-standard wireframing techniques and design workflows to conceptualize and build intuitive digital interfaces.</li>
+      <li>Focused on seamless navigation and optimal user engagement.</li>
+    </ul>
+    <ul class="tags"><li>Wireframing</li><li>UI/UX Design</li></ul>
+  </article>
+</section>
+
 <section id="skills">
   <h2>Skills</h2>
   <dl class="skills card">
-    <dt>Programming languages</dt><dd><ul class="tags"><li>Python</li><li>Java</li><li>C</li></ul></dd>
+    <dt>Programming languages</dt><dd><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>C</li></ul></dd>
     <dt>Databases</dt><dd><ul class="tags"><li>MySQL</li><li>MongoDB</li></ul></dd>
     <dt>Web</dt><dd><ul class="tags"><li>HTML</li><li>CSS</li></ul></dd>
+    <dt>UI/UX design</dt><dd><ul class="tags"><li>Wireframing</li><li>Prototyping</li><li>User research</li><li>Interface design</li><li>User flows</li><li>Design systems</li></ul></dd>
     <dt>AI and ML</dt><dd><ul class="tags"><li>Fundamentals of AI</li></ul></dd>
     <dt>Soft skills</dt><dd><ul class="tags"><li>Communication</li><li>Problem solving</li><li>Adaptability</li><li>Time management</li></ul></dd>
   </dl>
@@ -131,6 +145,7 @@ footer .big{font:400 clamp(1.3rem,4vw,2rem) "Share Tech Mono",monospace;color:va
 <section id="certs">
   <h2>Certifications</h2>
   <ul class="certs">
+    <li>AWS Certified AI Practitioner<span>Amazon Web Services</span></li>
     <li>AWS Certified Machine Learning Engineer - Associate<span>Amazon Web Services</span></li>
     <li>Agentic AI Certified Foundations Associate<span>Oracle</span></li>
     <li>Data Analytics Job Simulation<span>Deloitte</span></li>
@@ -151,7 +166,7 @@ footer .big{font:400 clamp(1.3rem,4vw,2rem) "Share Tech Mono",monospace;color:va
 
 <script>
 // Add your links here and they appear on the page automatically.
-var LINKS={github:"https://github.com/saiyaswanth26",linkedin:"https://www.linkedin.com/in/venkata-sai-yaswanth-bachu-33b4392bb/",portfolioRepo:"",portfolioDemo:"",fueltripRepo:""};
+var LINKS={github:"https://github.com/saiyaswanth26",linkedin:"https://www.linkedin.com/in/venkata-sai-yaswanth-bachu/",portfolioRepo:"",portfolioDemo:"",fueltripRepo:""};
 function a(h,t){return '<a href="'+h+'" target="_blank" rel="noopener">'+t+'</a>'}
 function put(id,parts){document.getElementById(id).innerHTML=parts.filter(Boolean).join(" &nbsp;|&nbsp; ")}
 put("l1",[LINKS.portfolioRepo&&a(LINKS.portfolioRepo,"GitHub"),LINKS.portfolioDemo&&a(LINKS.portfolioDemo,"Live demo")]);
